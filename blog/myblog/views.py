@@ -2,6 +2,7 @@ from django.shortcuts import render,get_object_or_404
 from django.views.generic import ListView,DetailView
 from .models import Article,Category,Tag
 from comments.forms import CommentForm
+from django.db.models import Q
 import markdown
 
 # 以下为传统首页视图
@@ -18,7 +19,7 @@ class IndexView(ListView):
     # 获取到的模型列表数据，保存给变量。
     context_object_name = 'article_list'
     #分页
-    paginate_by = 2
+    paginate_by = 8 
 
     def get_context_data(self, **kwargs):
         """
@@ -192,6 +193,7 @@ class ArticleDetailView(DetailView):
         article = super(ArticleDetailView,self).get_object(queryset=None)
         # 没有直接用markdown.markdown()方法来渲染post.body中的内容，而是先实例化了一个markdown.Markdown类md
         # 使用该实例的convert方法将article.content中的Markdown文本渲染成HTML文本,调用这个方法后，实例md会多出一个toc属性
+        # 属性的值就是内容的目录,把md.toc的值赋给 article.toc 属性，article本来是没有这个属性的，这是动态添加的md属性
         md = markdown.Markdown(extensions=[
             'markdown.extensions.extra',
             'markdown.extensions.codehilite',
@@ -259,5 +261,20 @@ def tag(request,pk):
     tag = get_object_or_404(Tag,pk=pk)
     article_list = Article.objects.filter(tag=tag)
     return render(request,'blog/index.html',context={'article_list':article_list})
+
+def search(request):
+    q = request.GET.get('q')
+    error_msg = ''
+
+    if not q:
+        error_msg = "请输入关键词"
+        return render(request, 'blog/index.html', {'error_msg': error_msg})
+
+    article_list = Article.objects.filter(Q(title__icontains=q) | Q(content__icontains=q))
+    return render(request, 'blog/index.html', {'error_msg': error_msg,
+                                               'article_list': article_list})
+def contact(request):
+    return render(request,'blog/contact.html')
+
 
 

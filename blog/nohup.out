@@ -1,0 +1,338 @@
+[2018-03-12 13:00:02 +0800] [22130] [INFO] Starting gunicorn 19.7.1
+[2018-03-12 13:00:02 +0800] [22130] [INFO] Listening at: http://127.0.0.1:8080 (22130)
+[2018-03-12 13:00:02 +0800] [22130] [INFO] Using worker: sync
+[2018-03-12 13:00:02 +0800] [22133] [INFO] Booting worker with pid: 22133
+[2018-03-12 13:00:02 +0800] [22134] [INFO] Booting worker with pid: 22134
+[2018-03-12 13:00:02 +0800] [22135] [INFO] Booting worker with pid: 22135
+[2018-03-12 13:00:02 +0800] [22137] [INFO] Booting worker with pid: 22137
+[2018-03-12 13:00:55 +0800] [22130] [INFO] Handling signal: term
+[2018-03-12 13:00:55 +0800] [22137] [INFO] Worker exiting (pid: 22137)
+[2018-03-12 13:00:55 +0800] [22133] [INFO] Worker exiting (pid: 22133)
+[2018-03-12 13:00:55 +0800] [22134] [INFO] Worker exiting (pid: 22134)
+[2018-03-12 13:00:55 +0800] [22135] [INFO] Worker exiting (pid: 22135)
+[2018-03-12 13:00:55 +0800] [22130] [INFO] Shutting down: Master
+[2018-03-12 13:02:50 +0800] [22259] [INFO] Starting gunicorn 19.7.1
+[2018-03-12 13:02:50 +0800] [22259] [INFO] Listening at: http://127.0.0.1:8080 (22259)
+[2018-03-12 13:02:50 +0800] [22259] [INFO] Using worker: sync
+[2018-03-12 13:02:50 +0800] [22262] [INFO] Booting worker with pid: 22262
+[2018-03-12 13:02:50 +0800] [22263] [INFO] Booting worker with pid: 22263
+[2018-03-12 13:02:50 +0800] [22265] [INFO] Booting worker with pid: 22265
+[2018-03-12 13:02:51 +0800] [22266] [INFO] Booting worker with pid: 22266
+[2018-03-12 13:12:20 +0800] [22259] [INFO] Handling signal: term
+[2018-03-12 13:12:20 +0800] [22265] [INFO] Worker exiting (pid: 22265)
+[2018-03-12 13:12:20 +0800] [22266] [INFO] Worker exiting (pid: 22266)
+[2018-03-12 13:12:20 +0800] [22262] [INFO] Worker exiting (pid: 22262)
+[2018-03-12 13:12:20 +0800] [22263] [INFO] Worker exiting (pid: 22263)
+[2018-03-12 13:12:20 +0800] [22259] [INFO] Shutting down: Master
+[2018-03-12 13:15:46 +0800] [22890] [INFO] Starting gunicorn 19.7.1
+[2018-03-12 13:15:46 +0800] [22890] [INFO] Listening at: http://127.0.0.1:8000 (22890)
+[2018-03-12 13:15:46 +0800] [22890] [INFO] Using worker: sync
+[2018-03-12 13:15:46 +0800] [22893] [INFO] Booting worker with pid: 22893
+[2018-03-12 13:15:46 +0800] [22893] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named '127'
+[2018-03-12 13:15:46 +0800] [22894] [INFO] Booting worker with pid: 22894
+[2018-03-12 13:15:46 +0800] [22894] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named '127'
+[2018-03-12 13:15:46 +0800] [22893] [INFO] Worker exiting (pid: 22893)
+[2018-03-12 13:15:46 +0800] [22894] [INFO] Worker exiting (pid: 22894)
+[2018-03-12 13:15:46 +0800] [22895] [INFO] Booting worker with pid: 22895
+[2018-03-12 13:15:46 +0800] [22895] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named '127'
+[2018-03-12 13:15:46 +0800] [22895] [INFO] Worker exiting (pid: 22895)
+Traceback (most recent call last):
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/arbiter.py", line 202, in run
+    self.manage_workers()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/arbiter.py", line 544, in manage_workers
+    self.spawn_workers()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/arbiter.py", line 612, in spawn_workers
+    time.sleep(0.1 * random.random())
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/arbiter.py", line 244, in handle_chld
+    self.reap_workers()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/arbiter.py", line 524, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/env1/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/app/base.py", line 203, in run
+    super(Application, self).run()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/arbiter.py", line 231, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/arbiter.py", line 344, in halt
+    self.stop()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/arbiter.py", line 393, in stop
+    time.sleep(0.1)
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/arbiter.py", line 244, in handle_chld
+    self.reap_workers()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/arbiter.py", line 524, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+[2018-03-12 13:16:43 +0800] [22937] [INFO] Starting gunicorn 19.7.1
+[2018-03-12 13:16:43 +0800] [22937] [INFO] Listening at: http://127.0.0.1:8080 (22937)
+[2018-03-12 13:16:43 +0800] [22937] [INFO] Using worker: sync
+[2018-03-12 13:16:43 +0800] [22940] [INFO] Booting worker with pid: 22940
+[2018-03-12 13:16:43 +0800] [22941] [INFO] Booting worker with pid: 22941
+[2018-03-12 13:16:43 +0800] [22943] [INFO] Booting worker with pid: 22943
+[2018-03-12 13:16:43 +0800] [22944] [INFO] Booting worker with pid: 22944
+[2018-03-12 13:37:16 +0800] [22937] [INFO] Handling signal: term
+[2018-03-12 13:37:16 +0800] [22940] [INFO] Worker exiting (pid: 22940)
+[2018-03-12 13:37:16 +0800] [22943] [INFO] Worker exiting (pid: 22943)
+[2018-03-12 13:37:16 +0800] [22944] [INFO] Worker exiting (pid: 22944)
+[2018-03-12 13:37:16 +0800] [22941] [INFO] Worker exiting (pid: 22941)
+[2018-03-12 13:37:17 +0800] [22937] [INFO] Shutting down: Master
+[2018-03-12 13:39:01 +0800] [23947] [INFO] Starting gunicorn 19.7.1
+[2018-03-12 13:39:01 +0800] [23947] [INFO] Listening at: http://127.0.0.1:8080 (23947)
+[2018-03-12 13:39:01 +0800] [23947] [INFO] Using worker: sync
+[2018-03-12 13:39:01 +0800] [23950] [INFO] Booting worker with pid: 23950
+[2018-03-12 13:39:01 +0800] [23951] [INFO] Booting worker with pid: 23951
+[2018-03-12 13:39:01 +0800] [23953] [INFO] Booting worker with pid: 23953
+[2018-03-12 13:39:01 +0800] [23955] [INFO] Booting worker with pid: 23955
+[2018-03-12 14:06:28 +0800] [25492] [INFO] Starting gunicorn 19.7.1
+[2018-03-12 14:06:28 +0800] [25492] [INFO] Listening at: http://127.0.0.1:8080 (25492)
+[2018-03-12 14:06:28 +0800] [25492] [INFO] Using worker: sync
+[2018-03-12 14:06:28 +0800] [25495] [INFO] Booting worker with pid: 25495
+[2018-03-12 14:06:28 +0800] [25496] [INFO] Booting worker with pid: 25496
+[2018-03-12 14:06:28 +0800] [25498] [INFO] Booting worker with pid: 25498
+[2018-03-12 14:06:28 +0800] [25500] [INFO] Booting worker with pid: 25500
+[2018-03-12 14:07:43 +0800] [23947] [INFO] Handling signal: term
+[2018-03-12 14:07:43 +0800] [23953] [INFO] Worker exiting (pid: 23953)
+[2018-03-12 14:07:43 +0800] [23955] [INFO] Worker exiting (pid: 23955)
+[2018-03-12 14:07:43 +0800] [23950] [INFO] Worker exiting (pid: 23950)
+[2018-03-12 14:07:43 +0800] [23951] [INFO] Worker exiting (pid: 23951)
+[2018-03-12 14:07:44 +0800] [23947] [INFO] Shutting down: Master
+[2018-03-12 14:07:48 +0800] [25492] [INFO] Handling signal: term
+[2018-03-12 14:07:48 +0800] [25496] [INFO] Worker exiting (pid: 25496)
+[2018-03-12 14:07:48 +0800] [25498] [INFO] Worker exiting (pid: 25498)
+[2018-03-12 14:07:48 +0800] [25500] [INFO] Worker exiting (pid: 25500)
+[2018-03-12 14:07:48 +0800] [25495] [INFO] Worker exiting (pid: 25495)
+[2018-03-12 14:07:48 +0800] [25492] [INFO] Shutting down: Master
+[2018-03-12 14:08:23 +0800] [25618] [INFO] Starting gunicorn 19.7.1
+[2018-03-12 14:08:23 +0800] [25618] [INFO] Listening at: http://127.0.0.1:8080 (25618)
+[2018-03-12 14:08:23 +0800] [25618] [INFO] Using worker: sync
+[2018-03-12 14:08:23 +0800] [25621] [INFO] Booting worker with pid: 25621
+[2018-03-12 14:08:23 +0800] [25622] [INFO] Booting worker with pid: 25622
+[2018-03-12 14:08:23 +0800] [25623] [INFO] Booting worker with pid: 25623
+[2018-03-12 14:08:23 +0800] [25625] [INFO] Booting worker with pid: 25625
+[2018-03-12 14:10:32 +0800] [25618] [INFO] Handling signal: term
+[2018-03-12 14:10:32 +0800] [25625] [INFO] Worker exiting (pid: 25625)
+[2018-03-12 14:10:32 +0800] [25621] [INFO] Worker exiting (pid: 25621)
+[2018-03-12 14:10:32 +0800] [25622] [INFO] Worker exiting (pid: 25622)
+[2018-03-12 14:10:32 +0800] [25623] [INFO] Worker exiting (pid: 25623)
+[2018-03-12 14:10:32 +0800] [25618] [INFO] Shutting down: Master
+[2018-03-12 14:16:55 +0800] [26301] [INFO] Starting gunicorn 19.7.1
+[2018-03-12 14:16:55 +0800] [26301] [INFO] Listening at: http://127.0.0.1:8080 (26301)
+[2018-03-12 14:16:55 +0800] [26301] [INFO] Using worker: sync
+[2018-03-12 14:16:55 +0800] [26304] [INFO] Booting worker with pid: 26304
+[2018-03-12 14:16:55 +0800] [26305] [INFO] Booting worker with pid: 26305
+[2018-03-12 14:16:55 +0800] [26306] [INFO] Booting worker with pid: 26306
+[2018-03-12 14:16:55 +0800] [26307] [INFO] Booting worker with pid: 26307
+[2018-03-12 14:18:25 +0800] [26377] [INFO] Starting gunicorn 19.7.1
+[2018-03-12 14:18:25 +0800] [26377] [INFO] Listening at: http://127.0.0.1:8080 (26377)
+[2018-03-12 14:18:25 +0800] [26377] [INFO] Using worker: sync
+[2018-03-12 14:18:25 +0800] [26380] [INFO] Booting worker with pid: 26380
+[2018-03-12 14:18:25 +0800] [26382] [INFO] Booting worker with pid: 26382
+[2018-03-12 14:18:25 +0800] [26383] [INFO] Booting worker with pid: 26383
+[2018-03-12 14:18:25 +0800] [26385] [INFO] Booting worker with pid: 26385
+[2018-03-13 08:32:10 +0800] [26301] [INFO] Handling signal: term
+[2018-03-13 08:32:10 +0800] [26304] [INFO] Worker exiting (pid: 26304)
+[2018-03-13 08:32:10 +0800] [26305] [INFO] Worker exiting (pid: 26305)
+[2018-03-13 08:32:10 +0800] [26306] [INFO] Worker exiting (pid: 26306)
+[2018-03-13 08:32:10 +0800] [26307] [INFO] Worker exiting (pid: 26307)
+[2018-03-13 08:32:10 +0800] [26377] [INFO] Handling signal: term
+[2018-03-13 08:32:10 +0800] [26380] [INFO] Worker exiting (pid: 26380)
+[2018-03-13 08:32:10 +0800] [26382] [INFO] Worker exiting (pid: 26382)
+[2018-03-13 08:32:10 +0800] [26383] [INFO] Worker exiting (pid: 26383)
+[2018-03-13 08:32:10 +0800] [26385] [INFO] Worker exiting (pid: 26385)
+[2018-03-13 08:32:12 +0800] [26301] [INFO] Shutting down: Master
+[2018-03-13 08:32:12 +0800] [26377] [INFO] Shutting down: Master
+usage: gunicorn [OPTIONS] [APP_MODULE]
+gunicorn: error: No application module specified.
+[2018-03-13 08:54:53 +0800] [2794] [INFO] Starting gunicorn 19.7.1
+[2018-03-13 08:54:53 +0800] [2794] [INFO] Listening at: http://127.0.0.1:8080 (2794)
+[2018-03-13 08:54:53 +0800] [2794] [INFO] Using worker: sync
+[2018-03-13 08:54:53 +0800] [2797] [INFO] Booting worker with pid: 2797
+[2018-03-13 08:54:53 +0800] [2798] [INFO] Booting worker with pid: 2798
+[2018-03-13 08:54:53 +0800] [2799] [INFO] Booting worker with pid: 2799
+[2018-03-13 08:54:53 +0800] [2800] [INFO] Booting worker with pid: 2800
+[2018-03-13 09:08:51 +0800] [3565] [INFO] Starting gunicorn 19.7.1
+[2018-03-13 09:08:51 +0800] [3565] [INFO] Listening at: http://127.0.0.1:8080 (3565)
+[2018-03-13 09:08:51 +0800] [3565] [INFO] Using worker: sync
+[2018-03-13 09:08:51 +0800] [3568] [INFO] Booting worker with pid: 3568
+[2018-03-13 09:08:51 +0800] [3570] [INFO] Booting worker with pid: 3570
+[2018-03-13 09:08:51 +0800] [3571] [INFO] Booting worker with pid: 3571
+[2018-03-13 09:08:51 +0800] [3572] [INFO] Booting worker with pid: 3572
+[2018-03-13 09:09:57 +0800] [3621] [INFO] Starting gunicorn 19.7.1
+[2018-03-13 09:09:57 +0800] [3621] [INFO] Listening at: http://127.0.0.1:8080 (3621)
+[2018-03-13 09:09:57 +0800] [3621] [INFO] Using worker: sync
+[2018-03-13 09:09:57 +0800] [3624] [INFO] Booting worker with pid: 3624
+[2018-03-13 09:09:57 +0800] [3625] [INFO] Booting worker with pid: 3625
+[2018-03-13 09:09:57 +0800] [3626] [INFO] Booting worker with pid: 3626
+[2018-03-13 09:09:57 +0800] [3627] [INFO] Booting worker with pid: 3627
+[2018-03-13 09:25:02 +0800] [4264] [INFO] Starting gunicorn 19.7.1
+[2018-03-13 09:25:02 +0800] [4264] [INFO] Listening at: http://127.0.0.1:8080 (4264)
+[2018-03-13 09:25:02 +0800] [4264] [INFO] Using worker: sync
+[2018-03-13 09:25:02 +0800] [4267] [INFO] Booting worker with pid: 4267
+[2018-03-13 09:25:02 +0800] [4268] [INFO] Booting worker with pid: 4268
+[2018-03-13 09:25:02 +0800] [4270] [INFO] Booting worker with pid: 4270
+[2018-03-13 09:25:02 +0800] [4272] [INFO] Booting worker with pid: 4272
+[2018-03-13 09:37:34 +0800] [4817] [INFO] Starting gunicorn 19.7.1
+[2018-03-13 09:37:34 +0800] [4817] [INFO] Listening at: http://127.0.0.1:8080 (4817)
+[2018-03-13 09:37:34 +0800] [4817] [INFO] Using worker: sync
+[2018-03-13 09:37:34 +0800] [4820] [INFO] Booting worker with pid: 4820
+[2018-03-13 09:37:34 +0800] [4821] [INFO] Booting worker with pid: 4821
+[2018-03-13 09:37:34 +0800] [4822] [INFO] Booting worker with pid: 4822
+[2018-03-13 09:37:34 +0800] [4823] [INFO] Booting worker with pid: 4823
+[2018-03-13 09:44:59 +0800] [5133] [INFO] Starting gunicorn 19.7.1
+[2018-03-13 09:44:59 +0800] [5133] [INFO] Listening at: http://127.0.0.1:8080 (5133)
+[2018-03-13 09:44:59 +0800] [5133] [INFO] Using worker: sync
+[2018-03-13 09:44:59 +0800] [5136] [INFO] Booting worker with pid: 5136
+[2018-03-13 09:44:59 +0800] [5138] [INFO] Booting worker with pid: 5138
+[2018-03-13 09:45:00 +0800] [5139] [INFO] Booting worker with pid: 5139
+[2018-03-13 09:45:00 +0800] [5140] [INFO] Booting worker with pid: 5140
+[2018-03-13 09:47:06 +0800] [5249] [INFO] Starting gunicorn 19.7.1
+[2018-03-13 09:47:06 +0800] [5249] [INFO] Listening at: http://127.0.0.1:8080 (5249)
+[2018-03-13 09:47:06 +0800] [5249] [INFO] Using worker: sync
+[2018-03-13 09:47:06 +0800] [5252] [INFO] Booting worker with pid: 5252
+[2018-03-13 09:47:06 +0800] [5254] [INFO] Booting worker with pid: 5254
+[2018-03-13 09:47:06 +0800] [5255] [INFO] Booting worker with pid: 5255
+[2018-03-13 09:47:06 +0800] [5256] [INFO] Booting worker with pid: 5256
+[2018-03-13 09:47:37 +0800] [5249] [INFO] Handling signal: term
+[2018-03-13 09:47:37 +0800] [5256] [INFO] Worker exiting (pid: 5256)
+[2018-03-13 09:47:37 +0800] [5252] [INFO] Worker exiting (pid: 5252)
+[2018-03-13 09:47:37 +0800] [5254] [INFO] Worker exiting (pid: 5254)
+[2018-03-13 09:47:37 +0800] [5255] [INFO] Worker exiting (pid: 5255)
+[2018-03-13 09:47:37 +0800] [5249] [INFO] Shutting down: Master
+[2018-03-13 09:47:41 +0800] [5133] [INFO] Handling signal: term
+[2018-03-13 09:47:41 +0800] [5136] [INFO] Worker exiting (pid: 5136)
+[2018-03-13 09:47:41 +0800] [5138] [INFO] Worker exiting (pid: 5138)
+[2018-03-13 09:47:41 +0800] [5139] [INFO] Worker exiting (pid: 5139)
+[2018-03-13 09:47:41 +0800] [5140] [INFO] Worker exiting (pid: 5140)
+[2018-03-13 09:47:42 +0800] [5133] [INFO] Shutting down: Master
+[2018-03-13 09:47:49 +0800] [4817] [INFO] Handling signal: term
+[2018-03-13 09:47:49 +0800] [4820] [INFO] Worker exiting (pid: 4820)
+[2018-03-13 09:47:49 +0800] [4821] [INFO] Worker exiting (pid: 4821)
+[2018-03-13 09:47:49 +0800] [4822] [INFO] Worker exiting (pid: 4822)
+[2018-03-13 09:47:49 +0800] [4823] [INFO] Worker exiting (pid: 4823)
+[2018-03-13 09:47:49 +0800] [4817] [INFO] Shutting down: Master
+[2018-03-13 09:48:00 +0800] [4264] [INFO] Handling signal: term
+[2018-03-13 09:48:00 +0800] [4272] [INFO] Worker exiting (pid: 4272)
+[2018-03-13 09:48:00 +0800] [4267] [INFO] Worker exiting (pid: 4267)
+[2018-03-13 09:48:00 +0800] [4268] [INFO] Worker exiting (pid: 4268)
+[2018-03-13 09:48:00 +0800] [4270] [INFO] Worker exiting (pid: 4270)
+[2018-03-13 09:48:00 +0800] [4264] [INFO] Shutting down: Master
+[2018-03-13 09:48:09 +0800] [3621] [INFO] Handling signal: term
+[2018-03-13 09:48:09 +0800] [3624] [INFO] Worker exiting (pid: 3624)
+[2018-03-13 09:48:09 +0800] [3625] [INFO] Worker exiting (pid: 3625)
+[2018-03-13 09:48:09 +0800] [3626] [INFO] Worker exiting (pid: 3626)
+[2018-03-13 09:48:09 +0800] [3627] [INFO] Worker exiting (pid: 3627)
+[2018-03-13 09:48:09 +0800] [3621] [INFO] Shutting down: Master
+[2018-03-13 09:48:14 +0800] [3565] [INFO] Handling signal: term
+[2018-03-13 09:48:14 +0800] [3568] [INFO] Worker exiting (pid: 3568)
+[2018-03-13 09:48:14 +0800] [3570] [INFO] Worker exiting (pid: 3570)
+[2018-03-13 09:48:14 +0800] [3571] [INFO] Worker exiting (pid: 3571)
+[2018-03-13 09:48:14 +0800] [3572] [INFO] Worker exiting (pid: 3572)
+[2018-03-13 09:48:14 +0800] [3565] [INFO] Shutting down: Master
+[2018-03-13 09:48:23 +0800] [2794] [INFO] Handling signal: term
+[2018-03-13 09:48:23 +0800] [2800] [INFO] Worker exiting (pid: 2800)
+[2018-03-13 09:48:23 +0800] [2797] [INFO] Worker exiting (pid: 2797)
+[2018-03-13 09:48:23 +0800] [2798] [INFO] Worker exiting (pid: 2798)
+[2018-03-13 09:48:23 +0800] [2799] [INFO] Worker exiting (pid: 2799)
+[2018-03-13 09:48:23 +0800] [2794] [INFO] Shutting down: Master
+[2018-03-13 09:48:53 +0800] [5353] [INFO] Starting gunicorn 19.7.1
+[2018-03-13 09:48:53 +0800] [5353] [INFO] Listening at: http://127.0.0.1:8080 (5353)
+[2018-03-13 09:48:53 +0800] [5353] [INFO] Using worker: sync
+[2018-03-13 09:48:53 +0800] [5356] [INFO] Booting worker with pid: 5356
+[2018-03-13 09:48:53 +0800] [5357] [INFO] Booting worker with pid: 5357
+[2018-03-13 09:48:53 +0800] [5358] [INFO] Booting worker with pid: 5358
+[2018-03-13 09:48:53 +0800] [5359] [INFO] Booting worker with pid: 5359
+[2018-03-13 09:58:42 +0800] [5793] [INFO] Starting gunicorn 19.7.1
+[2018-03-13 09:58:42 +0800] [5793] [INFO] Listening at: http://127.0.0.1:8080 (5793)
+[2018-03-13 09:58:42 +0800] [5793] [INFO] Using worker: sync
+[2018-03-13 09:58:42 +0800] [5796] [INFO] Booting worker with pid: 5796
+[2018-03-13 09:58:42 +0800] [5797] [INFO] Booting worker with pid: 5797
+[2018-03-13 09:58:42 +0800] [5798] [INFO] Booting worker with pid: 5798
+[2018-03-13 09:58:42 +0800] [5800] [INFO] Booting worker with pid: 5800
+[2018-03-13 10:00:30 +0800] [5353] [INFO] Handling signal: term
+[2018-03-13 10:00:30 +0800] [5356] [INFO] Worker exiting (pid: 5356)
+[2018-03-13 10:00:30 +0800] [5357] [INFO] Worker exiting (pid: 5357)
+[2018-03-13 10:00:30 +0800] [5359] [INFO] Worker exiting (pid: 5359)
+[2018-03-13 10:00:30 +0800] [5358] [INFO] Worker exiting (pid: 5358)
+[2018-03-13 10:00:31 +0800] [5353] [INFO] Shutting down: Master
+[2018-03-13 10:00:37 +0800] [5793] [INFO] Handling signal: term
+[2018-03-13 10:00:37 +0800] [5800] [INFO] Worker exiting (pid: 5800)
+[2018-03-13 10:00:37 +0800] [5796] [INFO] Worker exiting (pid: 5796)
+[2018-03-13 10:00:37 +0800] [5797] [INFO] Worker exiting (pid: 5797)
+[2018-03-13 10:00:37 +0800] [5798] [INFO] Worker exiting (pid: 5798)
+[2018-03-13 10:00:37 +0800] [5793] [INFO] Shutting down: Master
+[2018-03-13 10:00:47 +0800] [5899] [INFO] Starting gunicorn 19.7.1
+[2018-03-13 10:00:47 +0800] [5899] [INFO] Listening at: http://127.0.0.1:8080 (5899)
+[2018-03-13 10:00:47 +0800] [5899] [INFO] Using worker: sync
+[2018-03-13 10:00:47 +0800] [5902] [INFO] Booting worker with pid: 5902
+[2018-03-13 10:00:47 +0800] [5904] [INFO] Booting worker with pid: 5904
+[2018-03-13 10:00:47 +0800] [5905] [INFO] Booting worker with pid: 5905
+[2018-03-13 10:00:47 +0800] [5906] [INFO] Booting worker with pid: 5906
+[2018-03-21 12:31:57 +0800] [5899] [INFO] Handling signal: term
+[2018-03-21 12:31:57 +0800] [5904] [INFO] Worker exiting (pid: 5904)
+[2018-03-21 12:31:57 +0800] [5905] [INFO] Worker exiting (pid: 5905)
+[2018-03-21 12:31:57 +0800] [5906] [INFO] Worker exiting (pid: 5906)
+[2018-03-21 12:31:57 +0800] [5902] [INFO] Worker exiting (pid: 5902)
+[2018-03-21 12:31:58 +0800] [5899] [INFO] Shutting down: Master
+[2018-03-21 12:33:26 +0800] [30011] [INFO] Starting gunicorn 19.7.1
+[2018-03-21 12:33:26 +0800] [30011] [INFO] Listening at: http://127.0.0.1:8080 (30011)
+[2018-03-21 12:33:26 +0800] [30011] [INFO] Using worker: sync
+[2018-03-21 12:33:26 +0800] [30015] [INFO] Booting worker with pid: 30015
+[2018-03-21 12:33:26 +0800] [30016] [INFO] Booting worker with pid: 30016
+[2018-03-21 12:33:27 +0800] [30017] [INFO] Booting worker with pid: 30017
+[2018-03-21 12:33:27 +0800] [30018] [INFO] Booting worker with pid: 30018

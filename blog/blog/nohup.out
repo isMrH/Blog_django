@@ -1,0 +1,86 @@
+[2018-03-12 13:37:49 +0800] [23877] [INFO] Starting gunicorn 19.7.1
+[2018-03-12 13:37:49 +0800] [23877] [INFO] Listening at: http://127.0.0.1:8080 (23877)
+[2018-03-12 13:37:49 +0800] [23877] [INFO] Using worker: sync
+[2018-03-12 13:37:49 +0800] [23880] [INFO] Booting worker with pid: 23880
+[2018-03-12 13:37:49 +0800] [23880] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'blog'
+[2018-03-12 13:37:49 +0800] [23880] [INFO] Worker exiting (pid: 23880)
+[2018-03-12 13:37:49 +0800] [23881] [INFO] Booting worker with pid: 23881
+[2018-03-12 13:37:49 +0800] [23881] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'blog'
+[2018-03-12 13:37:49 +0800] [23881] [INFO] Worker exiting (pid: 23881)
+[2018-03-12 13:37:49 +0800] [23877] [INFO] Shutting down: Master
+[2018-03-12 13:37:49 +0800] [23877] [INFO] Reason: Worker failed to boot.
+[2018-03-12 13:38:16 +0800] [23910] [INFO] Starting gunicorn 19.7.1
+[2018-03-12 13:38:16 +0800] [23910] [INFO] Listening at: http://127.0.0.1:8080 (23910)
+[2018-03-12 13:38:16 +0800] [23910] [INFO] Using worker: sync
+[2018-03-12 13:38:16 +0800] [23913] [INFO] Booting worker with pid: 23913
+[2018-03-12 13:38:16 +0800] [23913] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'blog'
+[2018-03-12 13:38:16 +0800] [23913] [INFO] Worker exiting (pid: 23913)
+[2018-03-12 13:38:16 +0800] [23914] [INFO] Booting worker with pid: 23914
+[2018-03-12 13:38:16 +0800] [23914] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/env1/lib/python3.4/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+ImportError: No module named 'blog'
+[2018-03-12 13:38:16 +0800] [23914] [INFO] Worker exiting (pid: 23914)
+[2018-03-12 13:38:16 +0800] [23910] [INFO] Shutting down: Master
+[2018-03-12 13:38:16 +0800] [23910] [INFO] Reason: Worker failed to boot.
